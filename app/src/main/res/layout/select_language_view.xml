@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="?attr/colorPrimary">
+
+        <TextView
+            android:text="Left"
+            android:id="@+id/lang_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/swap_langs"
+            android:layout_centerVertical="true"
+            android:freezesText="true"
+            android:textColor="@color/white"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" />
+
+        <ImageView
+            android:id="@+id/swap_langs"
+            android:layout_centerInParent="true"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+
+            android:scaleType="center"
+            android:gravity="center_vertical"
+            app:srcCompat="@drawable/ic_code_black_24dp"
+            android:tint="@color/white"
+            android:background="?attr/selectableItemBackground" />
+
+        <TextView
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:id="@+id/lang_right"
+            android:text="Right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/swap_langs"
+            android:layout_centerVertical="true"
+            android:freezesText="true"
+            android:textColor="@color/white"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center_vertical" />
+
+    </RelativeLayout>
+</layout>

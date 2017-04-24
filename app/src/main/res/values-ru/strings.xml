@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="input_text_hint">Введите текст</string>
+    <string name="empty_view_text">Нет данных</string>
+    <string name="choose_lang">Выберите язык</string>
+    <string name="connection_error">Ошибка подключения</string>
+    <string name="retry">Повторить</string>
+    <string name="clear">Очистить</string>
+    <string name="translate">Перевод</string>
+    <string name="history">История</string>
+    <string name="favorites">Любимые</string>
+</resources>

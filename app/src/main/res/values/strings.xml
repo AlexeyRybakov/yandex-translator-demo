@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">YandexTranslatorDemo</string>
+
+    <string name="input_text_hint">Type text</string>
+    <string name="empty_view_text">There is no data</string>
+    <string name="choose_lang">Language choose</string>
+    <string name="connection_error">Connection error</string>
+    <string name="retry">Retry</string>
+    <string name="clear">Clear</string>
+    <string name="translate">Translate</string>
+    <string name="history">History</string>
+    <string name="favorites">Favorites</string>
+</resources>

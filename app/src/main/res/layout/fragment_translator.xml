@@ -1,0 +1,82 @@
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.translator.TranslatorFragment">
+
+        <include
+            android:id="@+id/language_bar"
+            layout="@layout/select_language_view" />
+
+        <FrameLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/input_layout"
+            android:layout_below="@+id/language_bar"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <com.example.yandextranslatordemo.presentation.MyEditText
+                android:id="@+id/input_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/input_text_hint"
+                android:gravity="top"
+
+                />
+
+            <ImageView
+                android:id="@+id/clear"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="bottom|left"
+                app:srcCompat="@drawable/ic_clear_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <com.example.yandextranslatordemo.presentation.ContentLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/translation_layout"
+            android:layout_below="@+id/input_layout">
+
+            <FrameLayout
+                android:id="@+id/content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/translation"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="64dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/favorite"
+                    app:srcCompat="@drawable/fav_selector"
+                    android:layout_gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp" />
+            </FrameLayout>
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progress"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/error_retry"
+                layout="@layout/retry_layout" />
+
+        </com.example.yandextranslatordemo.presentation.ContentLayout>
+
+
+    </RelativeLayout>
+</layout>
